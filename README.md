@@ -22,4 +22,4 @@
 <img src="/screenshots/screenshot5.jpg" width="250" height="450">
 <img src="/screenshots/screenshot6.jpg" width="250" height="450">
 <img src="/screenshots/screenshot7.jpg" width="250" height="450">
-<img src="/screenshots/screenshot8.jpg" width="250" height="450">
+<img src="/screenshots/screenshot8.jpg" width="450" height="250">
