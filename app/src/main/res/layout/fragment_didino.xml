@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_toolbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.didino.DidinoFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/view_Pager_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="440dp"
+                    android:layoutDirection="rtl" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical">
+
+                    <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+                        android:id="@+id/view_PagerDotsIndicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:layoutDirection="rtl"
+                        app:dotsColor="@color/white"
+                        app:dotsSize="12dp"
+                        app:dotsStrokeWidth="1dp"
+                        app:selectedDotColor="@color/orange" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/special_RelativeLayout_ID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/view_bg2"
+                android:clickable="true"
+                android:focusable="true"
+                android:layoutDirection="rtl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/special"
+                    android:textColor="@color/white" />
+
+                <ImageView
+                    android:id="@+id/img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/img"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/see_All"
+                    android:textColor="@color/orange" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/special_RecyclerView_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:keepScreenOn="true"
+                android:layoutDirection="rtl"
+                tools:listitem="6" />
+
+            <RelativeLayout
+                android:id="@+id/news_RelativeLayout_ID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/view_bg2"
+                android:clickable="true"
+                android:focusable="true"
+                android:layoutDirection="rtl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/news_Didino"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/img2"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/see_All"
+                    android:textColor="@color/orange" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/news_RecyclerView_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layoutDirection="rtl"
+                tools:listitem="6" />
+
+            <RelativeLayout
+                android:id="@+id/free_RelativeLayout_ID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/view_bg2"
+                android:clickable="true"
+                android:focusable="true"
+                android:layoutDirection="rtl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/see_Free"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/img3"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/see_All"
+                    android:textColor="@color/orange" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/free_RecyclerView_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layoutDirection="rtl"
+                tools:listitem="6" />
+
+            <RelativeLayout
+                android:id="@+id/persian_RelativeLayout_ID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/view_bg2"
+                android:clickable="true"
+                android:focusable="true"
+                android:layoutDirection="rtl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/iranian_series"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/img4"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/see_All"
+                    android:textColor="@color/orange" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/iranianSeries_RecyclerView_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layoutDirection="rtl"
+                tools:listitem="6" />
+
+            <RelativeLayout
+                android:id="@+id/foreign_RelativeLayout_ID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/view_bg2"
+                android:clickable="true"
+                android:focusable="true"
+                android:layoutDirection="rtl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/foreign_series"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/img5"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/see_All"
+                    android:textColor="@color/orange" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/foreignSeries_RecyclerView_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layoutDirection="rtl"
+                tools:listitem="6" />
+
+            <RelativeLayout
+                android:id="@+id/action_RelativeLayout_ID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/view_bg2"
+                android:clickable="true"
+                android:focusable="true"
+                android:layoutDirection="rtl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/action"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/img6"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/see_All"
+                    android:textColor="@color/orange" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/action_RecyclerView_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layoutDirection="rtl"
+                tools:listitem="6" />
+
+            <RelativeLayout
+                android:id="@+id/historical_RelativeLayout_ID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/view_bg2"
+                android:clickable="true"
+                android:focusable="true"
+                android:layoutDirection="rtl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/historical_and_Religious"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/img7"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/see_All"
+                    android:textColor="@color/orange" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/historicalAndReligious_RecyclerView_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layoutDirection="rtl"
+                tools:listitem="6" />
+
+            <RelativeLayout
+                android:id="@+id/romantic_RelativeLayout_ID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/view_bg2"
+                android:clickable="true"
+                android:focusable="true"
+                android:layoutDirection="rtl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/romantic"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/img8"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/see_All"
+                    android:textColor="@color/orange" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/romantic_RecyclerView_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layoutDirection="rtl"
+                tools:listitem="6" />
+
+            <RelativeLayout
+                android:id="@+id/family_RelativeLayout_ID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/view_bg2"
+                android:clickable="true"
+                android:focusable="true"
+                android:layoutDirection="rtl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/family"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/img9"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/see_All"
+                    android:textColor="@color/orange" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/family_RecyclerView_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layoutDirection="rtl"
+                tools:listitem="6" />
+
+            <RelativeLayout
+                android:id="@+id/documentary_RelativeLayout_ID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/view_bg2"
+                android:clickable="true"
+                android:focusable="true"
+                android:layoutDirection="rtl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/Documentary"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/img10"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/see_All"
+                    android:textColor="@color/orange" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/documentary_RecyclerView_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layoutDirection="rtl" />
+
+            <RelativeLayout
+                android:id="@+id/comedy_RelativeLayout_ID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/view_bg2"
+                android:clickable="true"
+                android:focusable="true"
+                android:layoutDirection="rtl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/comedy"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/img11"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/see_All"
+                    android:textColor="@color/orange" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/comedy_RecyclerView_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layoutDirection="rtl"
+                tools:listitem="6" />
+
+            <RelativeLayout
+                android:id="@+id/science_RelativeLayout_ID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/view_bg2"
+                android:clickable="true"
+                android:focusable="true"
+                android:layoutDirection="rtl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/science_Fiction"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/img12"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/see_All"
+                    android:textColor="@color/orange" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/science_Fiction_RecyclerView_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layoutDirection="rtl"
+                tools:listitem="6" />
+
+            <RelativeLayout
+                android:id="@+id/scary_RelativeLayout_ID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/view_bg2"
+                android:clickable="true"
+                android:focusable="true"
+                android:layoutDirection="rtl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/scary"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/img13"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/see_All"
+                    android:textColor="@color/orange"
+                    tools:ignore="RelativeOverlap" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/scary_RecyclerView_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layoutDirection="rtl"
+                tools:listitem="6" />
+
+            <RelativeLayout
+                android:id="@+id/animation_RelativeLayout_ID"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/view_bg2"
+                android:clickable="true"
+                android:focusable="true"
+                android:layoutDirection="rtl"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/animation"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/img14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="12dp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toStartOf="@+id/img14"
+                    android:fontFamily="@font/iransanmobile_bold"
+                    android:gravity="center"
+                    android:text="@string/see_All"
+                    android:textColor="@color/orange"
+                    tools:ignore="RelativeOverlap" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/animation_RecyclerView_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layoutDirection="rtl"
+                tools:listitem="6" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/material_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="0dp"
+        app:contentInsetEnd="0dp"
+        android:layout_alignParentTop="true"
+        app:contentInsetLeft="0dp"
+        android:background="@android:color/transparent"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:layout_scrollFlags="scroll|enterAlways">
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/iransanmobile_bold"
+            android:gravity="center"
+            android:text="@string/appName"
+            android:textColor="@android:color/transparent"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            tools:ignore="TooManyViews">
+
+            <ImageButton
+                android:id="@+id/filter_btn"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="?selectableItemBackgroundBorderless"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_baseline_filter_list_24" />
+
+            <ImageButton
+                android:id="@+id/search_btn"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="?selectableItemBackgroundBorderless"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_baseline_search_24" />
+
+            <ImageButton
+                android:id="@+id/account_btn"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:background="?selectableItemBackgroundBorderless"
+                android:contentDescription="TODO"
+                android:src="@drawable/ic_baseline_account_circle_24" />
+
+        </LinearLayout>
+    </com.google.android.material.appbar.MaterialToolbar>
+
+</RelativeLayout>

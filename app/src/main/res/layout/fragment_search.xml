@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.search.SearchFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/search_bg"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetRight="0dp"
+        android:elevation="4dp"
+        android:layoutDirection="rtl"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp"
+        app:navigationIcon="@drawable/ic_baseline_keyboard_backspace_24">
+
+        <EditText
+            android:id="@+id/searchEditTextViewID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/search_bg"
+            android:foregroundTint="@color/search_bg"
+            android:hint="@string/search_"
+            android:maxHeight="45dp"
+            android:maxLines="1"
+            android:maxEms="1"
+            android:textAppearance="@style/BottomNavigationViewTextStyle"
+            android:textColorHint="@color/white2"
+            android:textCursorDrawable="@drawable/bg_input_cursor_2"
+            android:textSize="14sp" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/txt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/searchicon" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/iransanmobile_bold"
+        android:gravity="center"
+        android:text="@string/search_hint"
+        android:textColor="@color/white" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/toolbar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/searchCategoryListRecyclerViewID"
+        android:layout_width="match_parent"
+        android:layout_margin="6dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar" />
+
+</RelativeLayout>

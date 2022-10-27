@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.didinoapp">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/main_icon"
+        android:supportsRtl="true"
+        android:theme="@style/SplashScreenTheme"
+        tools:targetApi="31">
+        <activity
+            android:name=".view.activities.videoplayer.MovieAndSeriesPlayerActivity"
+            android:configChanges="orientation|screenSize|layoutDirection"
+            android:theme="@style/Theme.DidinoApp"
+            android:exported="false" />
+        <activity
+            android:name=".view.activities.network.NetworkLostActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DidinoApp" />
+        <activity
+            android:name=".view.activities.home.HomeActivity"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.DidinoApp" />
+        <activity
+            android:name=".view.activities.splash.SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

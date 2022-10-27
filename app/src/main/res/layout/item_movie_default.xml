@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="myMovieDefaultModel"
+            type="com.example.didinoapp.data.model.MovieAndSeriesModel" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/itemRelative"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/view_bg2"
+        android:clickable="true"
+        android:focusable="true">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:layout_marginTop="8dp"
+            android:elevation="3dp"
+            app:cardCornerRadius="5dp">
+
+            <ImageView
+                android:id="@+id/imageBackgroundMovie"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:loadImageFromSite="@{myMovieDefaultModel.main_posturl}"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/persianMovieName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="3dp"
+            android:text="@{myMovieDefaultModel.name_persian_SE}"
+            android:fontFamily="@font/iransansmobile_light"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/foreignMovieName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/persianMovieName"
+            android:text="@{myMovieDefaultModel.name_foreign_SE}"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="3dp"
+            android:fontFamily="@font/iransansmobile_light"
+            android:maxLines="1"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white2"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</layout>

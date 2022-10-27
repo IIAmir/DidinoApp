@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/drawable/bg_btn.xml" value="0.1" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/drawable/bg_input_cursor_2.xml" value="0.1" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/drawable/bottom_selector.xml" value="0.1" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/drawable/btn_bg.xml" value="0.1" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/drawable/category_bg.xml" value="0.1" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/drawable/cursor_color.xml" value="0.1" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/drawable/default_bg.xml" value="0.1" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/drawable/default_bg_shape.xml" value="0.1" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/drawable/gallery_hide.xml" value="0.1" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/drawable/gallery_hide2.xml" value="0.1" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.122" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/drawable/ic_baseline_arrow_back_ios_new_24.xml" value="0.122" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/drawable/ic_baseline_filter_list_24.xml" value="0.122" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/drawable/ic_baseline_keyboard_backspace_24.xml" value="0.122" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/drawable/image_view_bg.xml" value="0.1" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/drawable/navigate_selector.xml" value="0.1" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/drawable/orange_ripple.xml" value="0.1" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/drawable/selector_bg_edit_2.xml" value="0.1" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/drawable/slide_bg.xml" value="0.1" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/drawable/view_bg.xml" value="0.1" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/drawable/view_bg2.xml" value="0.1" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/activity_home.xml" value="0.18333333333333332" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/activity_main.xml" value="0.203125" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/activity_movie_and_series_player.xml" value="0.203125" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/activity_network_lost.xml" value="0.18333333333333332" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/activity_search.xml" value="0.18333333333333332" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/activity_splash_screen.xml" value="0.18333333333333332" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/category_item.xml" value="0.203125" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/fragment_category.xml" value="0.18333333333333332" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/fragment_detail.xml" value="0.2" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/fragment_didino.xml" value="0.1675925925925926" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/fragment_gallery.xml" value="0.18333333333333332" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/fragment_marked_movies.xml" value="0.203125" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/fragment_movie_list.xml" value="0.18333333333333332" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/fragment_my_movies.xml" value="0.203125" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/fragment_search.xml" value="0.18333333333333332" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/fragment_views.xml" value="0.1890625" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/fragment_views_movies.xml" value="0.22" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/item_feed_horizontal_list.xml" value="0.19814814814814816" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/item_gallery.xml" value="0.18333333333333332" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/item_movie_default.xml" value="0.203125" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/item_special.xml" value="0.14" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/progress_bar_fragment.xml" value="0.203125" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/search_item.xml" value="0.203125" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/slide_account_item.xml" value="0.19814814814814816" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/layout/toolbar_item.xml" value="0.203125" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/menu/category_and_mymovies_item.xml" value="0.203125" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/menu/navigation_item.xml" value="0.20208333333333334" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Programming/Kotlin/DidinoApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

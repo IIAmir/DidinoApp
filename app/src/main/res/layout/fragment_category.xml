@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_Color"
+    android:orientation="vertical"
+    tools:context=".view.fragments.category.CategoryFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_category"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/main_Color2"
+        android:contentInsetStart="0dp"
+        android:contentInsetLeft="0dp"
+        android:contentInsetEnd="0dp"
+        android:contentInsetRight="0dp"
+        android:elevation="5dp"
+        app:contentInsetEnd="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetStart="0dp">
+
+        <ImageButton
+            android:id="@+id/search_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_baseline_search_24" />
+
+        <ImageButton
+            android:id="@+id/account_btn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="?selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_baseline_account_circle_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/iransanmobile_bold"
+            android:text="@string/appName"
+            android:textColor="@color/orange"
+            android:textSize="18sp" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/category_RecyclerView_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:keepScreenOn="true" />
+
+</LinearLayout>
